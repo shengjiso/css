@@ -1,0 +1,31 @@
+ul.circle {
+    list-style-type: circle
+}
+
+ul.square {
+    list-style-type: square
+}
+
+ol.none {
+    list-style-type: none
+}
+
+ol.lower-alpha {
+    list-style-type: lower-alpha
+}
+
+.list_style_image ul {
+    list-style-image: url('../img/eg_arrow.gif');
+}
+
+.list_style_position_inside{
+    list-style-position: inside;
+}
+
+.list_style_position_outside{
+    list-style-position:outside;
+}
+
+.list_style{
+    list-style:square inside  url('../img/eg_arrow.gif') ;
+}

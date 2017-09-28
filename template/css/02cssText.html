@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>文本</title>
+        <link rel="stylesheet" href="../../css/text.css">
+    </head>
+    <body>
+        <div class="fontColor">文本色开始</div>
+        <div class="color">
+            <h4>color red 红色</h4>
+            <h5>color 十六进制值的颜色（比如 #ff0000）</h5>
+            <h6>color rgb 代码的颜色（比如 rgb(255,0,0)）</h6>
+            <h7 id="h7" onclick="document.getElementById('h7').style.color='red'">
+                点我换颜色document.getElementById('h7').style.color='red'
+            </h7>
+        </div>
+        <div class="fontColor">文本色结束</div>
+        <br>
+        <div class="fontColor">行高开始</div>
+        <div class="line_height">
+            <h4>line-height: 100%; 使用百分比设置行间距</h4>
+            <h5>line-height: 30px; 使用像素值设置行间距</h5>
+            <h6>line-height: .5; 使用数值来设置行间距</h6>
+            <h6 id="line_height_h6" onclick="document.getElementById('line_height_h6').style.lineHeight='300%'">
+                点我换行高document.getElementById('line_height_h6').style.lineHeight='300%'</h6>
+            <div class="myInherit">
+                line-height:inherit 继承父元素的行高
+            </div>
+            <div class="myNormal">
+                line-height: normal: 默认行高默认行高默认行高默认行高默认行高默认行高默认行高默认行高1
+            </div>
+        </div>
+        <div class="fontColor">行高结束</div>
+        <br>
+        <div class="fontColor">文本缩进开始</div>
+        <div class="text_indent">
+            <p class="text_indent1">文本缩进 text-indent: -20px; 可以是百分比、可以是负数、可以继承</p>
+            <p class="text_indent2">文本缩进 text-indent: 120px;</p>
+            <p class="text_indent3">文本缩进 text-indent: -10%; 百分比、可以是负数</p>
+            <p class="text_indent4">文本缩进 text-indent: 20%; 可以是百分比</p>
+            <div>
+                <p>文本缩进 text-indent: -20px;可以默认继承</p>
+            </div>
+            <p class="text_indent4" id="text-indent" onclick="document.getElementById('text-indent').style.textIndent='50px'">文本缩进 document.getElementById('text-indent').style.textIndent='50px'</p>
+        </div>
+        <div class="fontColor">文本缩进结束</div>
+        <br>
+        <div class="fontColor">文本对齐开始</div>
+        <div class="text_align">
+            <div>
+                继承父元素对齐
+            </div>
+            <h1>文本对齐 text-align center</h1>
+            <h2>文本对齐 text-align left</h2>
+            <h3>文本对齐 text-align right</h3>
+            <h3 id="testAlign" onclick="document.getElementById('testAlign').style.textAlign='left';">文本对齐 text-align document.getElementById("p1").style.textAlign="right";</h3>
+        </div>
+        <div class="fontColor">文本对齐结束</div>
+        <br>
+        <div class="fontColor">字间距开始 -词间距</div>
+        <div class="word_spacing">
+            <p>word-spacing 字 间距 10 px</p>
+            <p>w o r d - s pa cing</p>
+            <h4>可 以 是 负 值 -10px</h4>
+            <h4 id="wordSpacing" onclick="document.getElementById('wordSpacing').style.wordSpacing='10px'">可 以 是 负 值 -10px document.getElementById('wordSpacing').style.wordSpacing='10px'</h4>
+        </div>
+        <div class="fontColor">字间距结束</div>
+        <br>
+
+        <div class="fontColor">字母间隔开始</div>
+        <div class="letter_spacing">
+            letter spacing 字母间隔 10px
+            <h4>可 以 是 负 值 -4px</h4>
+            <h4 id="letterSpacing" onclick="document.getElementById('letterSpacing').style.letterSpacing='5px';">document.getElementById('letterSpacing').style.letterSpacing='5px'</h4>
+        </div>
+        <div class="fontColor">字母间隔结束</div>
+        <br>
+
+        <div class="fontColor">字符转换大小写结束</div>
+        <div class="text_transform">
+            <p class="p1">全部大写text-transform: uppercase</p>
+            <p class="p2">全部小写text-transform: lowercase</p>
+            <p class="p3">首字母大写text-transform: capitalize qwe</p>
+            <p class="p1" id="none" onclick="document.getElementById('none').style.textTransform='none'">全部大写转默认document.getElementById('none').style.textTransform='none'</p>
+        </div>
+        <div class="fontColor">字符转换大小写结束</div>
+        <br>
+
+        <div class="fontColor">文本装饰开始</div>
+        <div class="text_decoration">
+            <h4>text-decoration: underline 下划线</h4>
+            <h5>text-decoration: overline 上划线</h5>
+            <h5 id="textDecoration" onclick="document.getElementById('textDecoration').style.textDecoration='none'">object.style.textDecoration="none"</h5>
+            <h7>text-decoration: line-through 中划线</h7>
+        </div>
+        <div class="fontColor">文本装饰结束</div>
+        <br>
+
+        <div class="fontColor">空格处理开始</div>
+        <div class="white_space">
+            <p>合         并         空白         的意思就是多         个空格合并为一个空格</p>
+            <h4>white-space: pre
+                保         留         空         白、保留换行、
+                不允许自动换行 保留空白、保留换行、不允许自动换行保留空白、保留换行、不允许自动换行保留空白、保留换行、不允许自动换行</h4>
+            <h5>white-space: pre-line;
+                合         并         空         白、保留换行、
+                允许自动换行 合并空白、保留换行、允许自动换行 合并空白、保留换行、允许自动换行</h5>
+            <h6>white-space: pre-wrap;
+                保         留         空         白、保留换行、
+                允许自动换行 保留空白、保留换行、允许自动换行保留空白、保留换行、允许自动换行保留空白、保留换行、允许自动换行保留空白、保留换行、允许自动换行</h6>
+            <p>white-space: normal;
+                合         并         空         白、忽略换行、
+                允许自动换行  允许自动换行允许自动换行允许自动换行允许自动换行允许自动换行允许自动换行允许自动换行允许自动换行允许自动换行允许自动换行允许自动换行允许自动换行 1
+            </p>
+            <br>
+            <p class="c">white-space: nowrap;
+                合         并         空         白、忽略换行、
+                不允许自动换行 合并空白、忽略换行、不允许自动换行  合并空白、忽略换行、不允许自动换行  合并空白、忽略换行、不允许自动换行
+            </p>
+        </div>
+        <div class="fontColor">空格处理结束</div>
+        <br>
+
+        <div class="fontColor">文本方向开始</div>
+        <div class="direction">
+            <h3>direction ltr</h3>
+            <h4>direction rtl</h4>
+        </div>
+        <div class="fontColor">文本方向结束</div>
+        <br>
+    </body>
+</html>

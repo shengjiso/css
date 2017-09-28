@@ -1,0 +1,74 @@
+h2.pos_abs {
+    position: absolute;
+    left: 150px;
+    top: 150px
+}
+h2.pos_abs11 {
+    position: absolute;
+    left: 150px;
+    top: 550px
+}
+
+h2.pos_abs1 {
+    color: cyan;
+    position: absolute;
+    left: 90px;
+    top: 140px;
+    z-index: -1;
+}
+
+h2.pos_fixed {
+    color: red;
+    position: fixed;
+    left: 90px;
+    top: 140px
+}
+
+div.pos_relative {
+    color: red;
+    position: relative;
+    left: 90px;
+    top: 140px
+}
+div.pos_relative11 {
+    color: red;
+    position: absolute;
+    left: 90px;
+    top: 140px
+}
+
+div.scroll {
+    float: left;
+    display: inline;
+    background-color: #00FFFF;
+    width: 150px;
+    height: 150px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+div.visible {
+    float: left;
+    display: inline;
+    background-color: #00FFFF;
+    width: 150px;
+    height: 150px;
+}
+
+div.hidden {
+    float: left;
+    display: inline;
+    background-color: #00FFFF;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+div.auto {
+    float: left;
+    display: inline;
+    background-color: #00FFFF;
+    width: 150px;
+    height: 150px;
+    overflow: auto;
+}

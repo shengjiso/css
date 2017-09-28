@@ -1,0 +1,200 @@
+.fontColor {
+    background-color: black;
+    color: white;
+}
+
+.color h4 {
+    color: red;
+}
+
+.color h5 {
+    color: #00ff00;
+}
+
+.color h6 {
+    color: rgb(0, 0, 255);
+}
+
+.line_height {
+    line-height: 300%;
+}
+
+.line_height h4 {
+    width: 150px;
+    height: 100px;
+    border: dashed;
+    border-color: red;
+    border-width: 1px;
+    line-height: 100%;
+}
+
+.line_height h5 {
+    width: 150px;
+    height: 100px;
+    border: dashed;
+    border-color: red;
+    border-width: 1px;
+    line-height: 30px;
+}
+
+.line_height h6 {
+    width: 150px;
+    height: 100px;
+    border: dashed;
+    border-color: red;
+    border-width: 1px;
+    line-height: .5;
+}
+.myInherit {
+    width: 150px;
+    height: 100px;
+    border: dashed;
+    border-color: red;
+    border-width: 1px;
+    line-height: inherit;
+}
+.myNormal {
+    width: 150px;
+    height: 100px;
+    border: dashed;
+    border-color: red;
+    border-width: 1px;
+    line-height:normal;
+}
+
+.text_indent {
+    text-indent: -20px;
+}
+.text_indent1 {
+    text-indent: -20px;
+}
+.text_indent2 {
+    text-indent: 120px;
+}
+.text_indent3 {
+    text-indent: -10%;
+}
+.text_indent4 {
+    text-indent: 20%;
+}
+
+.text_align {
+    border: dashed;
+    border-color: cyan;
+    border-width: 1px;
+    width: 800px;
+    height: 230px;
+    text-align: center;
+}
+
+.text_align h1 {
+    text-align: center
+}
+
+.text_align h2 {
+    text-align: left
+}
+
+.text_align h3 {
+    text-align: right
+}
+
+.word_spacing {
+    word-spacing: 100px;
+}
+
+.word_spacing h4 {
+    word-spacing: -10px;
+}
+
+.letter_spacing {
+    letter-spacing: 10px;
+}
+
+.letter_spacing h4 {
+    letter-spacing: -4px
+}
+
+.text_transform .p1 {
+    text-transform: uppercase;
+}
+
+.text_transform .p2 {
+    text-transform: lowercase;
+}
+
+.text_transform .p3 {
+    text-transform: capitalize;
+}
+
+.text_decoration h4 {
+    text-decoration: underline;
+}
+
+.text_decoration h5 {
+    text-decoration: overline;
+}
+
+.text_decoration h6 {
+    text-decoration: blink;
+}
+
+.text_decoration h7 {
+    text-decoration: line-through;
+}
+
+.white_space h4 {
+    border-color: #00FFFF;
+    border-width: 1px;
+    border-style: solid;
+    width: 100px;
+    white-space: pre;
+}
+
+.white_space h5 {
+    border-color: #00FFFF;
+    border-width: 1px;
+    border-style: solid;
+    width: 100px;
+    white-space: pre-line;
+}
+
+.white_space h6 {
+    border-color: #00FFFF;
+    border-width: 1px;
+    border-style: solid;
+    width: 100px;
+    white-space: pre-wrap;
+}
+
+.white_space p {
+    border-color: #00FFFF;
+    border-width: 1px;
+    border-style: solid;
+    width: 100px;
+    white-space: normal;
+}
+
+.white_space .c {
+    border-color: #00FFFF;
+    border-width: 1px;
+    border-style: solid;
+    width: 100px;
+    white-space: nowrap;
+}
+
+.direction h3 {
+    border-color: #00FFFF;
+    border-width: 1px;
+    border-style: solid;
+    width: 500px;
+    direction: ltr;
+}
+
+.direction h4 {
+    border-color: #00FFFF;
+    border-width: 1px;
+    border-style: solid;
+    width: 500px;
+    direction: rtl;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>背景设置</title>
+        <link rel="stylesheet" href="../../css/background.css">
+        <script>
+            function changeBackgroundColor() {
+                document.getElementById("background-color").style.backgroundColor = "orange";
+            }
+
+            function setBackgroundImg() {
+                document.getElementById("setBackgroundImg").style.backgroundImage = "url('../img/avator.png')";
+            }
+
+            function setBackgroundImgNone() {
+                document.getElementById("setBackgroundImg").style.backgroundImage = "none";
+            }
+        </script>
+    </head>
+    <body>
+        <div class="fontColor">背景色开始</div>
+        <div class="background_color1">
+            background-color: red; 直接用颜色英文名称
+        </div>
+        <div class="background_color2">
+            background-color: #f00
+        </div>
+        <div class="background_color3">
+            background-color: rgb(155,100,100)
+        </div>
+        <div class="background_color4">
+            background-color: transparent 默认值为透明
+        </div>
+        <div class="background_color3">
+            <div class="background_color5">
+                background-color: inherit 从父级继承背景色
+            </div>
+        </div>
+        <div id="background-color" onclick="changeBackgroundColor()" class="background_color6">
+            document.getElementById("background-color").style.backgroundColor = "orange";
+        </div>
+        <div class="fontColor">背景色结束</div>
+
+        <br><br><br>
+        <div class="fontColor">背景图开始</div>
+        <div class="background_img">
+            background-image: url("../img/avator.png");
+            默认。背景图像将在垂直方向和水平方向重复。
+        </div>
+        <br>
+        <div class="background_color_img">
+            背景重复，有背景色但是被图遮盖
+        </div>
+        <br>
+        <div class="background_color_img_no_repeat">
+            背景不重复，有背景色
+        </div>
+        <br>
+        <div class="background_color_img_no_repeat">
+            <div class="background_img_inherit">
+                继承父元素背景
+            </div>
+        </div>
+        <br>
+        <div id="setBackgroundImg" class="background_color_img_no_repeat">
+            <p onclick="setBackgroundImg()">设置新背景</p>
+            <p onclick="setBackgroundImgNone()">设置不可见</p>
+        </div>
+        <br>
+        <div class="background_color_img_X_repect">
+            背景X轴方向重复，有背景色但是被图遮盖
+        </div>
+        <br>
+        <div class="background_color_img_Y_repect">
+            背景Y轴重复，有背景色但是被图遮盖
+        </div>
+        <div class="fontColor">背景图结束</div>
+        <br>
+        <br>
+        <div class="fontColor">背景图定位开始</div>
+        <div class="background_position">
+            <p>center=center center</p>
+            <p>top=top center 或 center top</p>
+            <p>bottom=bottom center 或 center bottom</p>
+            <p>right=right center 或 center right</p>
+            <p>left=left center 或 center left</p>
+            <p>60% 40%</p>
+            <p>300px 100px</p>
+        </div>
+        <div class="fontColor">背景图定位结束</div>
+        <br>
+        <div class="fontColor">背景图滚动开始</div>
+        <div class="background">
+            background: #00FF00 url(../img/avator.png) no-repeat fixed top right;
+        </div>
+        <br>
+        <div class="scroll">
+            <p>DIVCSS5测试内容，欢迎来到DIVCSS5学习DIV+CSS技术。大家可以通过DIVCSS5主站上的所有免费CSS教程足可学会DIV CSS技术 -
+                如果需要深入系统学习、较短时间达到理想学习效果可参加DIV+CSS培训班学习。</p>
+            <p>DIVCSS5测试内容，欢迎来到DIVCSS5学习DIV+CSS技术。大家可以通过DIVCSS5主站上的所有免费CSS教程足可学会DIV CSS技术 -
+                如果需要深入系统学习、较短时间达到理想学习效果可参加DIV+CSS培训班学习。</p>
+            <p>DIVCSS5测试内容，欢迎来到DIVCSS5学习DIV+CSS技术。大家可以通过DIVCSS5主站上的所有免费CSS教程足可学会DIV CSS技术 -
+                如果需要深入系统学习、较短时间达到理想学习效果可参加DIV+CSS培训班学习。</p>
+            <p>DIVCSS5测试内容，欢迎来到DIVCSS5学习DIV+CSS技术。大家可以通过DIVCSS5主站上的所有免费CSS教程足可学会DIV CSS技术 -
+                如果需要深入系统学习、较短时间达到理想学习效果可参加DIV+CSS培训班学习。</p>
+            <p>DIVCSS5测试内容，欢迎来到DIVCSS5学习DIV+CSS技术。大家可以通过DIVCSS5主站上的所有免费CSS教程足可学会DIV CSS技术 -
+                如果需要深入系统学习、较短时间达到理想学习效果可参加DIV+CSS培训班学习。</p>
+        </div>
+        <div class="fontColor">背景图滚动结束</div>
+        <br>
+        <div class="fontColor">CSS3背景图拉伸开始</div>
+        <div class="background_size">background-sizeCSS3背景拉伸background-size: 110px 60px;</div>
+        <div class="background_size1">background-sizeCSS3背景拉伸background-size: 25% 25%;</div>
+        <div class="background_size2">background-sizeCSS3背景拉伸background-size: contain;</div>
+        <div class="background_size3">background-sizeCSS3背景拉伸background-size: cover;</div>
+        <div class="fontColor">CSS3背景图拉伸结束</div>
+        <br>
+        <div class="fontColor">background-origin CSS3背景图填充区域设置开始</div>
+        <div class="background_origin1">padding-box
+            这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。
+            这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。</div>
+        <div class="background_origin2">border-box
+            这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。
+            这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。</div>
+        <div class="background_origin3">content-box
+            这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。
+            这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。</div>
+        <div class="fontColor">background-origin CSS3背景图填充区域设置结束</div>
+        <br>
+        <div class="fontColor">background-clip CSS3背景色填充区域设置开始</div>
+        <div class="background_clip1">background-clip border-box
+            这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。</div>
+        <br>
+        <div class="background_clip2">background-clip padding-box
+            这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。</div>
+        <br>
+        <div class="background_clip3">background-clip content-box
+            这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。</div>
+        <br>
+        <div class="background_clip4">不设置background-clip
+            这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。</div>
+        <div class="fontColor">background-clip CSS3背景色填充区域设置结束</div>
+    </body>
+</html>

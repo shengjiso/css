@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>字体</title>
+        <link rel="stylesheet" href="../../css/font.css">
+    </head>
+    <body>
+        <div class="font_family">
+            font_family
+        </div>
+        <div class="fontColor">字体样式开始</div>
+        <div>
+            <p class="font_style">font-style: normal asdasd</p>
+            <p class="font_style1">font-style: italic rewrerew</p>
+            <p class="font_style2">font-style: oblique  fsdfsfdsdf</p>
+            <p>italic 和 oblique 的区别
+                font-style 非常简单：用于在 normal 文本、italic 文本和 oblique 文本之间选择。唯一有点复杂的是明确 italic 文本和 oblique 文本之间的差别。
+                斜体（italic）是一种简单的字体风格，对每个字母的结构有一些小改动，来反映变化的外观。与此不同，倾斜（oblique）文本则是正常竖直文本的一个倾斜版本。
+                通常情况下，italic 和 oblique 文本在 web 浏览器中看上去完全一样。
+            </p>
+            <p class="font_style2" id="fontStyle" onclick="document.getElementById('fontStyle').style.fontStyle='normal'">
+                document.getElementById('fontStyle').style.fontStyle='normal'
+            </p>
+        </div>
+        <div class="fontColor">字体样式结束</div>
+        <br>
+        <div class="fontColor">字体变形小型大写字母开始</div>
+        <div class="font_variant">
+            QweQwe<span>AqdAqd</span>
+            <br>
+            <span id="fontVariant" style="font-variant: normal" onclick="document.getElementById('fontVariant').style.fontVariant='small-caps'">document.getElementById('fontVariant').style.fontVariant='small-caps'</span>
+            小写字母均会被转换为大写，但是所有使用小型大写字体的字母与其余文本相比，其字体尺寸更小
+        </div>
+        <div class="fontColor">字体变形小型大写字母结束</div>
+        <br>
+        <div class="fontColor">字体加粗font-weight开始</div>
+        <div>
+            <p class="font_weight_normal">字体加粗font_weight_normal  400 等价于 normal</p>
+            <p class="font_weight_bold">字体加粗font_weight_bold  700 等价于 bold</p>
+            <p class="font_weight_bolder">字体加粗font_weight_bolder  bolder，浏览器会设置比所继承值更粗的一个字体加粗 </p>
+            <p class="font_weight_lighter">字体加粗font_weight_lighter  lighter 会导致浏览器将加粗度下移而不是上移。</p>
+            <p class="font_weight_100">字体加粗font_weight_100</p>
+            <p class="font_weight_200">字体加粗font_weight_200</p>
+            <p class="font_weight_300">字体加粗font_weight_300</p>
+            <p class="font_weight_400">字体加粗font_weight_400</p>
+            <p class="font_weight_500">字体加粗font_weight_500</p>
+            <p class="font_weight_600">字体加粗font_weight_600</p>
+            <p class="font_weight_700">字体加粗font_weight_700</p>
+            <p class="font_weight_800">字体加粗font_weight_800</p>
+            <p class="font_weight_850">字体加粗font_weight_850  错误的值，无效</p>
+            <p class="font_weight_900">字体加粗font_weight_900</p>
+            <p class="font_weight_1000">字体加粗font_weight_1000 最大900.超过无效</p>
+            <p class="font_weight_900" id="fontWeight" onclick="document.getElementById('fontWeight').style.fontWeight='100'">document.getElementById('fontWeight').style.fontWeight='100'</p>
+        </div>
+        <div class="fontColor">字体加粗font-weight结束</div>
+        <br>
+        <div class="fontColor">字体大小font-size开始</div>
+        <div class="font_size">
+            <p class="font_size_xx_small">文字大小xx_small</p>
+            <p class="font_size_x_small">文字大小x_small</p>
+            <p class="font_size_small">文字大小small</p>
+            <p class="font_size_medium">文字大小默认值为medium </p>
+            <p class="font_size_large">文字大小large</p>
+            <p class="font_size_x_large">文字大小x_large</p>
+            <p class="font_size_xx_larger">文字大小xx_large</p>
+            <p class="font_size_smaller">文字大小比父元素更小smaller</p>
+            <p class="font_size_larger">文字大小比父元素更大larger</p>
+            <p class="font_size_10">文字大小固定值10px</p>
+            <p class="font_size_per">文字大小父级大小百分比10%;</p>
+            <p class="font_size_em1">文字大小1em</p>
+        </div>
+        <div class="fontColor">字体大小font-size结束</div>
+        <br>
+    </body>
+</html>

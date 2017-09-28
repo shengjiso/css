@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+            .testOverflow1 {
+                width: 350px;
+                text-overflow: clip;
+                overflow: hidden;
+                white-space: nowrap;
+                border: 1px solid black;
+            }
+
+            .testOverflow2 {
+                width: 350px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                border: 1px solid black;
+            }
+
+            .testOverflow3 {
+                width: 350px;
+                text-overflow: "q";
+                overflow: hidden;
+                white-space: nowrap;
+                border: 1px solid black;
+            }
+
+            h1 {
+                text-shadow: 2px 2px 8px #FF0000;
+            }
+
+            p.wrap {
+                width: 70px;
+                word-wrap: break-word;
+            }
+            p.wrap1 {
+                width: 70px;
+            }
+        </style>
+    </head>
+    <body>
+        text-overflow text-overflow: clip|ellipsis|string;
+        text-shadow: h-shadow v-shadow blur color;
+        <div class="testOverflow1">
+            text-overflow: clip这里是文本。这里是文本。这里是文本。这里是文本。这里是文本。
+        </div>
+        <div class="testOverflow2">
+            text-overflow: ellipsis这里是文本。这里是文本。这里是文本。这里是文本。这里是文本。
+        </div>
+        <div class="testOverflow3">
+            text-overflow: string这里是文本。这里是文本。这里是文本。这里是文本。这里是文本。
+        </div>
+        <div>
+            text-shadow: h-shadow v-shadow blur color;
+        </div>
+        <h1>模糊效果的文本阴影！text-shadow:2px 2px 8px #FF0000;</h1>
+        <p class="wrap">模糊效果的文本阴影！text-shadow:2px 2px 8px #FF0000;</p>
+        <p class="wrap1">模糊效果的文本阴影！text-shadow:2px 2px 8px #FF0000;</p>
+    </body>
+</html>

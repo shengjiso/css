@@ -1,0 +1,12 @@
+.outline1 p {
+    border: red dotted 1px;
+    outline-color: cyan;
+    outline-width: 2px;
+    outline-style: solid;
+}
+
+.outline2 p {
+    width: 150px;
+    border: red dotted 1px;
+    outline: cyan solid 5px;
+}

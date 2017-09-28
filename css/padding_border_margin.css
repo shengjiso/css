@@ -1,0 +1,59 @@
+.fontColor {
+    background-color: black;
+    color: white;
+}
+
+.border {
+    border: orange dotted 2px;
+}
+
+.myDiv1 {
+    width: 30%;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    border: red solid 10px;
+  /*  border-color: red;
+    border-style: dotted;
+    border-width: 1px;*/
+}
+
+.myDiv2 {
+    width: 30%;
+    height: 50px;
+    margin: 10px;
+    padding: 0;
+    border: red solid 10px;
+}
+
+.myDiv3 {
+    width: 30%;
+    height: 50px;
+    padding: 10px;
+    margin: 0;
+    border: red solid 10px;
+}
+
+.myDiv4 {
+    width: 30%;
+    height: 50px;
+    padding: 10px;
+    margin: 10px;
+    border: red solid 10px;
+}
+
+#d1 {
+    width:100px;
+    height:100px;
+    margin-top:20px;
+    margin-bottom:20px;
+    background-color:red;
+}
+
+#d2 {
+    width:100px;
+    height:100px;
+    margin-top:10px;
+    margin-bottom:20px;
+    background-color:blue;
+}

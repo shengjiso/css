@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+            div.border_radius {
+                text-align: center;
+                border: 2px solid #a1a1a1;
+                padding: 10px 40px;
+                background: #dddddd;
+                width: 350px;
+                border-radius: 25px;
+                -moz-border-radius: 25px; /* 老的 Firefox */
+            }
+
+            div.border_radius1 {
+                text-align: center;
+                border: 2px solid #a1a1a1;
+                padding: 10px 40px;
+                background: #dddddd;
+                width: 350px;
+                border-radius: 25%;
+                -moz-border-radius: 25%; /* 老的 Firefox */
+            }
+
+            div.shadow {
+                width: 300px;
+                height: 100px;
+                background-color: #ff9900;
+                -moz-box-shadow: 10px 10px 5px #888888; /* 老的 Firefox */
+                box-shadow: 10px 10px 5px #888888;
+                border-radius: 25px;
+                -moz-border-radius: 25px; /* 老的 Firefox */
+            }
+            table,tr,td{
+                border: 2px black solid;
+                border-collapse: collapse;
+            }
+            div#MyDIV
+            {
+                background-color:yellow;
+                width:200px;
+                height:100px;
+                box-shadow:10px 10px 50px 20px pink inset;
+            }
+
+
+            div.imageBackground
+            {
+                border:15px solid transparent;
+                width:300px;
+                padding:10px 20px;
+            }
+
+            #round
+            {
+                -moz-border-image:url(../../img/avator.png) 30 30 round;	/* Old Firefox */
+                -webkit-border-image:url(../../img/avator.png) 30 30 round;	/* Safari and Chrome */
+                -o-border-image:url(../../img/avator.png) 30 30 round;		/* Opera */
+                border-image:url(../../img/avator.png) 30 30 round;
+            }
+
+            #stretch
+            {
+                -moz-border-image:url(../../img/avator.png) 30 30 stretch;	/* Old Firefox */
+                -webkit-border-image:url(../../img/avator.png) 30 30 stretch;	/* Safari and Chrome */
+                -o-border-image:url(../../img/avator.png) 30 30 stretch;	/* Opera */
+                border-image:url(../../img/avator.png) 30 30 stretch;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            边框属性：
+            border-radius
+            box-shadow
+            border-image
+        </div>
+        <br>
+        <div class="border_radius">border-radius: 25px 属性允许您向元素添加圆角。</div>
+        <br>
+        <div class="border_radius1">border-radius: 25% 属性允许您向元素添加圆角。</div>
+        <br>
+        <p>CSS3 边框阴影
+            在 CSS3 中，box-shadow 用于向方框添加阴影：</p>
+        <br>
+        <div class="shadow">box-shadow: 10px 10px 5px #888888;</div>
+        <div>语法：box-shadow: h-shadow v-shadow blur spread color inset;</div>
+        <table>
+            <thead>
+            <tr>
+                <td>值</td>
+                <td>描述</td>
+            <tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>h-shadow</td>
+                <td>必需。水平阴影的位置。允许负值。</td>
+            <tr>
+            <tr>
+                <td>v-shadow</td>
+                <td>必需。垂直阴影的位置。允许负值。</td>
+            <tr>
+            <tr>
+                <td>blur</td>
+                <td>可选。模糊距离。</td>
+            <tr>
+            <tr>
+                <td>spread</td>
+                <td>可选。阴影的尺寸。</td>
+            <tr>
+            <tr>
+                <td>color</td>
+                <td>可选。阴影的颜色。</td>
+            <tr>
+            <tr>
+                <td>inset</td>
+                <td>可选。将外部阴影 (outset) 改为内部阴影。</td>
+            <tr>
+            </tbody>
+        </table>
+
+        <div id="MyDIV">我的阴影DIV</div>
+<br>
+        <div class="imageBackground" id="round">在这里，图片铺满整个边框。</div>
+        <br>
+        <div class="imageBackground" id="stretch">在这里，图片被拉伸以填充该区域。</div>
+
+        <p>这是我们使用的图片：</p>
+        <img src="../../img/avator.png">
+
+        <p><b>注释：</b> Internet Explorer 不支持 border-image 属性。</p>
+        <p>border-image 属性规定了用作边框的图片。</p>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+.small {
+    line-height: 60%;
+}
+
+.big {
+    line-height: 50px;
+}
+
+.max_height {
+    max-height: 10px;
+}
+
+.min_height {
+    min-height: 70px;
+}
+
+.max_width{
+    max-width: 10px;
+}
+
+.min_width {
+    min-width: 70px;
+}
